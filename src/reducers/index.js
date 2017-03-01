@@ -1,10 +1,5 @@
-import {combineReducers} from "redux";
-import { combineEpics } from 'redux-observable';
-import ajaxCallsInProgress from "./ajaxStatusReducer";
-import ping,{} from './ping';
+import {helloWorld} from './helloWorld';
 
-const rootReducer = combineReducers({
-  ajaxCallsInProgress
-});
-
-export default rootReducer;
+export default {
+  helloWorld
+};

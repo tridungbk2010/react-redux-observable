@@ -17,7 +17,7 @@ const pingReducer = (state = init, action) => {
   }
 };
 
-const pingEpic = action$ =>
+export const pingEpic = action$ =>
   action$.ofType('PING')
     .delay(1000)
     .mapTo({type: 'POONG'});
